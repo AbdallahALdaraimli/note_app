@@ -4,18 +4,16 @@ import 'package:note_app/views/notes_view.dart';
 void main() {
   runApp(const note_app());
 }
+
 class note_app extends StatelessWidget {
   const note_app({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-          theme :ThemeData(brightness: Brightness.dark , fontFamily: 'Poppins'),
-      home: const notesview (
-
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
+      home: const notesview(),
     );
   }
 }
-
-
