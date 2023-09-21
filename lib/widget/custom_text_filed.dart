@@ -9,13 +9,13 @@ class CustemTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor: KPrimarycolor,
+      cursorColor: kPrimarycolor,
       maxLines: maxLines,
       decoration: InputDecoration(
         hintText: hint,
         border: buildBorder(),
         enabledBorder: buildBorder(),
-        focusedBorder: buildBorder(KPrimarycolor),
+        focusedBorder: buildBorder(kPrimarycolor),
       ),
     );
   }
